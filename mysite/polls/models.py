@@ -8,12 +8,14 @@ class User(models.Model):
     user_name = models.CharField(max_length=20)
     user_password = models.CharField(max_length=20)
     user_login = models.CharField(max_length=50)
-    user_id = models.ForeignKey(Role, on_delete = models.CASCADE)
+    role = models.ForeignKey(Role, on_delete = models.CASCADE)
+
 
 class Message(models.Model):
     message_text = models.CharField(max_length=200)
     pub_date = models.DateTimeField('date published')
     sender = models.ForeignKey(User, on_delete = models.CASCADE)
+    receiver = models.ForeignKey(User, on_delete = models.CASCADE)
 
 class Product(models.Model):
     product_id = models.CharField(max_length=40)
