@@ -1,12 +1,12 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from .models import Question, Choice
+
+from .models import TestUser
 from django.shortcuts import get_object_or_404,render
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 def index(request):
-   list_question = Question.objects.all()
-   context = {'list':list_question}
-   return render(request, 'index.html', context)
+   return render(request, 'index.html')
 
 def votes(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
@@ -23,3 +23,19 @@ def votes(request, question_id):
 def feedback(request):
     email = request.POST['email']
     print(f'\n\nClient email: {email}')
+    context = {'users': []}
+    return render(request, 'Register/forma.html', context)
+
+@csrf_exempt
+def register(request):
+    try:
+        email = request.POST['email']
+        password = request.POST['pass']
+        user = TestUser(email=email, password=password)
+        user.save()
+    except:
+        pass
+
+    list_users = TestUser.objects.all()
+    context = {'users': list_users}
+    return render(request, 'Register/forma.html', context)
