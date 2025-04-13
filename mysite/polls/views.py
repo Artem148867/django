@@ -8,18 +8,9 @@ from django.views.decorators.csrf import csrf_exempt
 def index(request):
    return render(request, 'index.html')
 
-def votes(request, question_id):
-    question = get_object_or_404(Question, pk=question_id)
-    try:
-        selected_choice = question.choice_set.get(pk=request.POST['choice'])
-        selected_choice.votes += 1
-        selected_choice.save()
-        return HttpResponseRedirect(reverse('polls:result', args=(question.id,)))
-    except (KeyError, Choice.DoesNotExist):
-        return render(request, 'polls/detail.html', {
-            'question': question,
-            'error_message': "Ничего не выбрано!",
-            })
+def Dragon_west(request):
+   return render(request, 'Fruits/Dragon-west.html')
+
 def feedback(request):
     email = request.POST['email']
     print(f'\n\nClient email: {email}')
@@ -33,9 +24,9 @@ def register(request):
         password = request.POST['pass']
         user = TestUser(email=email, password=password)
         user.save()
-    except:
-        pass
+        
+        return render(request, 'index.html')
+    except Exception as e:
+        return render(request, "Register/forma.html")
 
-    list_users = TestUser.objects.all()
-    context = {'users': list_users}
-    return render(request, 'Register/forma.html', context)
+    
