@@ -13,7 +13,7 @@
 <body>
 <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
     <div class="container-fluid">
-       <a class="navbar-brand" href="index.html">Главная</a>
+       <a class="navbar-brand" href="{% url 'polls:index' %}">Главная</a>
        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
@@ -46,7 +46,7 @@
                
 <div class="container">
     <div class="Discounts">
-        <h1>WINTER SALE!</h1>   
+        <h1 id="slogan">BEST FRUITS IS  HERE!</h1>   
     </div>
     <div class="row">
             <div class="col" id="card1">
@@ -70,7 +70,7 @@
                         <div class="card__price">1350</div>
                     </div>
                     <!-- Ссылка-название товара -->
-                    <a href="#" class="card__title">
+                    <a href="Fruits/Dragon-west.html" class="card__title">
                         Dragon fruit(west)
                     </a>
                     <!-- Кнопка добавить в корзину -->
@@ -174,8 +174,9 @@
                 <!-- Изображение-ссылка товара -->
                 <a href="#" class="card__image">
                     <img
-                    src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/8c/LeopardFruit.png/revision/latest?cb=20231027115615"
-                    alt="Leopard fruit"/>
+                        src="https://static.wikia.nocookie.net/roblox-blox-piece/images/8/8c/LeopardFruit.png/revision/latest?cb=20231027115615"
+                        alt="Leopard fruit"
+                    />
                 </a>
                 <!-- Скидка на товар -->
                 <div class="card__label">-10%</div>
