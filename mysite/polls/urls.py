@@ -5,4 +5,6 @@ urlpatterns = [
     path('feedback/', views.feedback, name='feedback'),
     path('', views.register, name="register"),
     path('Fruits/Dragon-west.html', views.Dragon_west, name='Dragon_west'),
+    path('auth', views.join, name='auth'),
+    path('main', views.index, name='index'),
 ]
