@@ -1,13 +1,12 @@
 body {
-    height: 100vh;
     background-image: url(https://avatars.mds.yandex.net/i?id=feefbfb4a6a8678148eeb7cbe1171ddf_l-5280334-images-thumbs&n=13);
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 #container {
-    background-image: url(dr.jpeg);
+    background-color: #000000b4;
     background-repeat: no-repeat;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -92,7 +91,7 @@ h3 {
 
 
 #west-1{
-margin-left: 25%;
+   margin-left: 25%;
 }
 
 #west-6{
@@ -101,9 +100,9 @@ margin-left: 25%;
 }
 
 
-.card{
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.5s ease-in-out;
-    background-color: white;
-}
+    .card{
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.5s ease-in-out;
+        background-color: white;
+    }
