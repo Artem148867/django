@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-    background-color: #000000b4;
+    background-color: rgba(24, 24, 24, 0.975);
     background-repeat: no-repeat;
     padding-top: 2%;
     padding-bottom: 2%;
