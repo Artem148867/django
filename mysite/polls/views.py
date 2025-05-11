@@ -21,7 +21,10 @@ def Yeti(request):
    return render(request, 'Fruits/Yeti.html')
 
 def Leopard(request):
-   return render(request, 'Fruits/Leopard.html')      
+   return render(request, 'Fruits/Leopard.html')
+
+def Gravity(request):
+   return render(request, 'Fruits/Gravity.html')      
 
 def feedback(request):
     email = request.POST['email']
