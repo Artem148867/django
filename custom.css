@@ -1,0 +1,9 @@
+body,
+.monaco-shell,
+.editor-container,
+.panel.integrated-terminal .terminal-wrapper,
+.sidebar,
+.title,
+.editor-group-container {
+    z-index: 2;
+}

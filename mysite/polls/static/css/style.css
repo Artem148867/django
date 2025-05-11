@@ -6,10 +6,14 @@
 body {
     background-size:cover;
     background-repeat: no-repeat;
-    background-image: url(https://avatars.mds.yandex.net/i?id=feefbfb4a6a8678148eeb7cbe1171ddf_l-5280334-images-thumbs&n=13);
+    background-image: url('../img/Background.jpg');
     color: #ffffff; 
     background-attachment: fixed;
 
+}
+
+.navbar{
+  height: fit-content;
 }
 
 .container {
@@ -172,3 +176,33 @@ body {
     margin-left: 37.25%;
     padding-bottom: 2%;
     }
+
+#Kitsuneimg {
+  border-radius: 7px;
+}
+
+#Leopardimg {
+  border-radius: 7px;
+}
+
+#Westimg {
+  border-radius: 7px;
+}
+
+#Eastimg {
+  border-radius: 7px;
+}
+
+#Yetiimg {
+  border-radius: 7px;
+}
+
+.test-card{
+  background-color: #70c05b;
+  border-radius: 20px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

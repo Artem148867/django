@@ -5,6 +5,11 @@ urlpatterns = [
     path('feedback/', views.feedback, name='feedback'),
     path('', views.register, name="register"),
     path('Fruits/Dragon-west.html', views.Dragon_west, name='Dragon_west'),
+    path('Fruits/Dragon-east.html', views.Dragon_east, name='Dragon_east'),
+    path('Fruits/Kitsune.html', views.Kitsune, name='Kitsune'),
+    path('Fruits/Yeti.html', views.Yeti, name='Yeti'),
+    path('Fruits/Leopard.html', views.Leopard, name='Leopard'),
     path('auth', views.join, name='auth'),
     path('main', views.index, name='index'),
+    path('test', views.test),
 ]

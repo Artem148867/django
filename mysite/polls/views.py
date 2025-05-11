@@ -8,8 +8,20 @@ from django.views.decorators.csrf import csrf_exempt
 def index(request):
    return render(request, 'index.html')
 
+def Dragon_east(request):
+   return render(request, 'Fruits/Dragon-east.html')
+
 def Dragon_west(request):
    return render(request, 'Fruits/Dragon-west.html')
+
+def Kitsune(request):
+   return render(request, 'Fruits/kitsune.html')
+
+def Yeti(request):
+   return render(request, 'Fruits/Yeti.html')
+
+def Leopard(request):
+   return render(request, 'Fruits/Leopard.html')      
 
 def feedback(request):
     email = request.POST['email']
@@ -53,3 +65,8 @@ def join(request):
             return render(request, 'Register/join.html', {'error': 'Пользователь не найден.'})
 
     return render(request, 'Register/join.html')
+
+
+def test(request):
+    cards = ['css/Yeti.jpg']
+    return render(request, 'test.html', {'products': cards})
