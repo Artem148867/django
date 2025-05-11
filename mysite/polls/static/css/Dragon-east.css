@@ -62,12 +62,18 @@ h3 {
 
 .character-section {
     background: linear-gradient(135deg, #000000, #2c003e); /* Мрачный градиент */
-    padding: 40px;
+    padding: 10%;
     text-align: center;
     border: 3px solid #ffd700; /* Золотая рамка */
     margin: 20px;
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Золотое свечение */
+}
+
+.Gif-dragon {
+    padding-left: 0.25%;
+    border: 2px solid #ff69b4; /* Розовая рамка вокруг видео */
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7); /* Энергетическая аура */
 }
 
 .character-title {
@@ -82,12 +88,6 @@ h3 {
     margin: 20px 0;
 }
 
-.video-container {
-    border: 2px solid #ff69b4; /* Розовая рамка вокруг видео */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7); /* Энергетическая аура */
-}
 
 
 #west-1{
@@ -108,8 +108,8 @@ h3 {
 
 #Vskill {
     margin-top: 1%;
-    margin-bottom: -10%;
-    height: 110%;
+    margin-bottom: 3.75%;
+    height: 100%;
     width: 102.25%;
 }
 .navbar{
