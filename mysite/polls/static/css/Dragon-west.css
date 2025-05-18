@@ -70,7 +70,11 @@ h3 {
     box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* Золотое свечение */
 }
 
-
+.Gif-dragon {
+    padding-left: 0.25%;
+    border: 2px solid #ff69b4; /* Розовая рамка вокруг видео */
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7); /* Энергетическая аура */
+}
 
 .character-title {
     font-size: 36px;
@@ -102,14 +106,6 @@ h3 {
     background-color: white;
 }
 
-.Gif-dragon {
-    border: 4px dashed #6A5ACD;
-    padding: 1px;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.284);
-}
-
-
 #Vskill {
     margin-top: 1%;
     margin-bottom: 3.75%;
@@ -121,7 +117,5 @@ h3 {
 }
 
 h5 {
-    font-size: 18px;
-    color: #e0e0e0;
-    margin: 20px 0;
+    color: white;
 }

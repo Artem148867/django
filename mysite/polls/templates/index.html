@@ -44,192 +44,45 @@
     </div>
  </nav>
                
-<div class="container">
+<div class="container d-flex flex-column align-items-center">
     <div class="Discounts">
         <h1 id="slogan">BEST FRUITS IS  HERE!</h1>   
     </div>
-    <div class="row">
-            <div class="col" id="card1">
+    {% if products %}
+        <div class="card-container">
+        {% for card in products %}
+        
+            <div class="col-4 d-flex justify-content-center align-items-center" >
                     <!-- Карточка товара -->
                 <div class="card">
                     <!-- Верхняя часть -->
                     <div class="card__top">
                     <!-- Изображение-ссылка товара -->
-                    <a href="Fruits/Dragon-west.html" class="card__image">
-                        <img
-                        id="Westimg"
-                        src="{% static 'img/West.jpg' %}"
-                        alt="Dragon fruit(east)"/>
+                    <a href="{{card.product_url}}" class="card__image">
+                        <img id="Westimg" src="{{card.product_image}}" alt="Dragon fruit(east)"/>
                     </a>
                     <!-- Скидка на товар -->
-                    <div class="card__label">-10%</div>
+                    <div class="card__label">-{{card.product_discount}}%</div>
                     </div>
                     <!-- Нижняя часть -->
                     <div class="card__bottom">
                     <!-- Цены на товар (с учетом скидки и без)-->
                     <div class="card__prices">
-                        <div class="card__price">1350</div>
+                        <div class="card__price">{{card.product_price}}</div>
                     </div>
                     <!-- Ссылка-название товара -->
-                    <a href="Fruits/Dragon-west.html" class="card__title">
-                        Dragon fruit(west)
-                    </a>
+                    <a href="Fruits/Dragon-west.html" class="card__title">{{card.product_name}}</a>
                     <!-- Кнопка добавить в корзину -->
                     <button class="card__add">В корзину</button>
                     </div>
                 </div>
             </div>
-            <div class="col" id="card2">
-                    <!-- Карточка товара -->
-                <div class="card">
-                    <!-- Верхняя часть -->
-                    <div class="card__top">
-                    <!-- Изображение-ссылка товара -->
-                    <a href="Fruits/Dragon-east.html" class="card__image">
-                        <img
-                        id="Eastimg"
-                        src="{% static 'img/East.jpg' %}"
-                        alt="Dragon fruit(west)"/>
-                    </a>
-                    <!-- Скидка на товар -->
-                    <div class="card__label">-10%</div>
-                    </div>
-                    <!-- Нижняя часть -->
-                    <div class="card__bottom">
-                    <!-- Цены на товар (с учетом скидки и без)-->
-                    <div class="card__prices">
-                        <div class="card__price">1350</div>
-                    </div>
-                    <!-- Ссылка-название товара -->
-                    <a href="Fruits/Dragon-east.html" class="card__title">
-                        Dragon fruit(east)
-                    </a>
-                    <!-- Кнопка добавить в корзину -->
-                    <button class="card__add">В корзину</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col" id="card3">
-                <!-- Карточка товара -->
-            <div class="card">
-                <!-- Верхняя часть -->
-                <div class="card__top">
-                <!-- Изображение-ссылка товара -->
-                <a href="Fruits/Kitsune.html" class="card__image">
-                    <img
-                    id="Kitsuneimg"
-                    src="{% static 'img/Kitsune.jpg' %}"
-                    alt="Kitsune fruit"/>
-                </a>
-                <!-- Скидка на товар -->
-                <div class="card__label">-10%</div>
-                </div>
-                <!-- Нижняя часть -->
-                <div class="card__bottom">
-                <!-- Цены на товар (с учетом скидки и без)-->
-                <div class="card__prices">
-                    <div class="card__price">800</div>
-                </div>
-                <!-- Ссылка-название товара -->
-                <a href="Fruits/Kitsune.html" class="card__title">
-                    Kitsune fruit
-                </a>
-                <!-- Кнопка добавить в корзину -->
-                <button class="card__add">В корзину</button>
-                </div>
-            </div>
+        
+        {% endfor %}
         </div>
-    </div>
-    <div class="row">
-        <div class="col" id="card4">
-            <!-- Карточка товара -->
-        <div class="card">
-            <!-- Верхняя часть -->
-            <div class="card__top">
-            <!-- Изображение-ссылка товара -->
-            <a href="Fruits/Yeti.html" class="card__image">
-                <img
-                id="Yetiimg"
-                src="{% static 'img/Yeti.jpg' %}"
-                alt="Yeti fruit"/>
-            </a>
-            <!-- Скидка на товар -->
-            <div class="card__label">-10%</div>
-            </div>
-            <!-- Нижняя часть -->
-            <div class="card__bottom">
-            <!-- Цены на товар (с учетом скидки и без)-->
-            <div class="card__prices">
-                <div class="card__price">350</div>
-            </div>
-            <!-- Ссылка-название товара -->
-            <a href="Fruits/Yeti.html" class="card__title">
-            Yeti fruit
-            </a>
-            <!-- Кнопка добавить в корзину -->
-            <button class="card__add">В корзину</button>
-            </div>
-        </div>
-        </div>
-        <div class="col" id="card5">
-            <div class="card">
-                <!-- Верхняя часть -->
-                <div class="card__top">
-                <!-- Изображение-ссылка товара -->
-                <a href="Fruits/Leopard.html" class="card__image">
-                    <img id="Leopardimg" src="{% static 'img/Leopard.jpg' %}" alt="Leopard fruit" />
-                </a>
-                <!-- Скидка на товар -->
-                <div class="card__label">-10%</div>
-                </div>
-                <!-- Нижняя часть -->
-                <div class="card__bottom">
-                <!-- Цены на товар (с учетом скидки и без)-->
-                <div class="card__prices">
-                    <div class="card__price">150</div>
-                </div>
-                <!-- Ссылка-название товара -->
-                <a href="Fruits/Leopard.html" class="card__title">
-                Leopard fruit
-                </a>
-                <!-- Кнопка добавить в корзину -->
-                <button class="card__add">В корзину</button>
-                </div>
-            </div>
-        </div> 
-        <div class="col" id="card6">
-            <!-- Карточка товара -->
-        <div class="card">
-            <!-- Верхняя часть -->
-            <div class="card__top">
-            <!-- Изображение-ссылка товара -->
-            <a href="Fruits/Gravity.html" class="card__image">
-                <img
-                src="{% static 'img/Gravity.jpg' %}"
-                alt="Gravity"/>
-            </a>
-            <!-- Скидка на товар -->
-            <div class="card__label">-10%</div>
-            </div>
-            <!-- Нижняя часть -->
-            <div class="card__bottom">
-            <!-- Цены на товар (с учетом скидки и без)-->
-            <div class="card__prices">
-                <div class="card__price">750</div>
-            </div>
-            <!-- Ссылка-название товара -->
-            <a href="Fruits/Gravity.html" class="card__title">
-                Gravity fruit
-            </a>
-            <!-- Кнопка добавить в корзину -->
-            <button class="card__add">В корзину</button>
-            </div>
-        </div>
-    </div>  
-    </div>
-    </div>
-</div>
-    
+    {% else %}
+        <h1>Нема карточек</h1>
+    {% endif %}
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

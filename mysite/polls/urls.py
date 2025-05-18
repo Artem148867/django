@@ -12,5 +12,4 @@ urlpatterns = [
     path('Fruits/Gravity.html', views.Gravity, name='Gravity'),
     path('auth', views.join, name='auth'),
     path('main', views.index, name='index'),
-    path('test', views.test),
 ]

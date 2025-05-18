@@ -83,6 +83,12 @@ body {
     color: #fff;
   }
   
+  .card-container{
+    display: flex;
+    max-width: 90%;
+    flex-wrap: wrap;
+  }
+
   .card__bottom {
     display: flex;
     flex-direction: column;
@@ -173,9 +179,8 @@ body {
     }
 
 .Discounts {
-    margin-left: 37.25%;
     padding-bottom: 2%;
-    }
+}
 
 #Kitsuneimg {
   border-radius: 7px;
@@ -208,5 +213,6 @@ body {
 }
 
 #slogan {
-  margin-left: -8%;
+  text-align: center;
 }
+

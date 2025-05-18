@@ -9,7 +9,9 @@
 
 <div class="card">
   <strong><h1>Регистрация</h1></strong>
+
   <form action="{% url 'polls:register' %}" method="POST">
+      {% csrf_token %}
     <input type="text" placeholder="Имя" name="login" required>
     <input type="email" placeholder="Email" name="email" required>
     <input type="password" placeholder="Пароль" name="pass" required>
