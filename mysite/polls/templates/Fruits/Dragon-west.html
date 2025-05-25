@@ -100,32 +100,88 @@
         </div>     
         <div class="container">
             <div class="row">
-                <div class="col-6" id="M1">
-                    <section class="character-section">
-                        <h1 class="character-title">M1</h1>
-                        <p class="character-description">Draconic Blood</p>
-                        <div class="Gif-dragon">
-                            <img src="{% static 'Videos/Dragon-m1.gif' %}" type="gif" id="">
-                        </div>
-                    </section>
-                </div>
                 <div class="col-6" id="west-3">
                     <section class="character-section">
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <a class="nav-link active" id="pills-test-tab" data-bs-toggle="pill" href="#pills-test" role="tab" aria-controls="pills-test" aria-selected="true">Home</a>
-                            <a class="nav-link disabled" id="pills-disabled-tab" data-bs-toggle="pill" href="#pills-disabled" role="tab" aria-controls="pills-disabled" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link active" id="pills-m1-tab" data-bs-toggle="pill" href="#pills-m1" role="tab" aria-controls="pills-m1" aria-selected="true">Human</a>
+                            <a class="nav-link" id="pills-hybridm1-tab" data-bs-toggle="pill" href="#pills-hybridm1" role="tab" aria-controls="pills-hybridm1" aria-selected="false">Hybrid</a>
+                            <a class="nav-link" id="pills-transformm1-tab" data-bs-toggle="pill" href="#pills-transformm1" role="tab" aria-controls="pills-transformm1" aria-selected="false">Dragon</a>
+                        </nav>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-m1" role="tabpanel" aria-labelledby="pills-m1-tab">                        
+                                <h1 class="character-title">M1 skill</h1>
+                                <p class="character-description"><h5>Normal Attack</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-m1.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user performs a series of consecutive attacks consisting of three strikes with the fire claws, the last of which is a cross.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-hybridm1" role="tabpanel" aria-labelledby="pills-hybridm1-tab">                        
+                                <h1 class="character-title">M1 skill</h1>
+                                <p class="character-description"><h5>Normal Attack</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-hybrid-m1.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user performs a series of consecutive attacks consisting of three strikes with the fire claws, the last of which is a cross.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-transformm1" role="tabpanel" aria-labelledby="pills-transformm1-tab">
+                                <h1 class="character-title">M1 skill</h1>
+                                <p class="character-description"><h5>Normal Attack</h5></p> 
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-west-transform-m1.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user performs a series of consecutive attacks consisting of three strikes with the fire claws, the last of which is a cross.</h5>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-6" id="west-3">
+                    <section class="character-section">
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <a class="nav-link active" id="pills-test-tab" data-bs-toggle="pill" href="#pills-test" role="tab" aria-controls="pills-test" aria-selected="true">Human</a>
+                            <a class="nav-link" id="pills-hybridz-tab" data-bs-toggle="pill" href="#pills-hybridz" role="tab" aria-controls="pills-hybridz" aria-selected="false">Hybrid</a>
+                            <a class="nav-link" id="pills-transformz-tab" data-bs-toggle="pill" href="#pills-transformz" role="tab" aria-controls="pills-transformz" aria-selected="false">Dragon</a>
                         </nav>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-test" role="tabpanel" aria-labelledby="pills-test-tab">                        
                                 <h1 class="character-title">Z skill</h1>
-                                <p class="character-description">Heatwave Cannon</p>
+                                <p class="character-description"><h5>Heatwave Cannon</h5></p>
                                 <div class="Gif-dragon">
                                     <img src="{% static 'Videos/Dragon-z.gif' %}" type="gif" id="">
                                 </div>
+                                <p class="character-description">
+                                    <h5>The user charges a fire sphere in their mouth, and when they release it, it shoots out in the direction of the cursor and destroys everything in its path, exploding at the end. The strength of the explosion depends on how long the key is held down. If it hits an enemy, and there is no wall behind them, the beam will pierce the enemy and throw them back to the explosion site.</h5>
+                                </p>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile1" role="tabpanel" aria-labelledby="pills-profile1-tab"><div class="Gif-dragon">
-                                    <img src="{% static 'Videos/Dragon-transform(west).gif' %}" type="gif" id="">
-                                </div></div>
+                            <div class="tab-pane fade" id="pills-hybridz" role="tabpanel" aria-labelledby="pills-hybridz-tab">                        
+                                <h1 class="character-title">Z skill</h1>
+                                <p class="character-description"><h5>Heatwave Cannon</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-hybridz.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user charges a fire sphere in their mouth, and when they release it, it shoots out in the direction of the cursor and destroys everything in its path, exploding at the end. The strength of the explosion depends on how long the key is held down. If it hits an enemy, and there is no wall behind them, the beam will pierce the enemy and throw them back to the explosion site.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-transformz" role="tabpanel" aria-labelledby="pills-transformz-tab">
+                                <h1 class="character-title">Z skill</h1>
+                                <p class="character-description">
+                                    <h5>Heatwave Cannon</h5>
+                                </p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-west-transformz.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user charges a fire sphere in their mouth, and when they release it, it shoots out in the direction of the cursor and destroys everything in its path, exploding at the end. The strength of the explosion depends on how long the key is held down. If it hits an enemy, and there is no wall behind them, the beam will pierce the enemy and throw them back to the explosion site.</h5>
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -136,20 +192,84 @@
             <div class="row">
                 <div class="col-6" id="west-4">
                     <section class="character-section">
-                        <h1 class="character-title">X skill</h1>
-                        <p class="character-description">Infernal Pincer</p>
-                        <div class="Gif-dragon">
-                            <img src="{% static 'Videos/Dragon-x.gif' %}" type="gif" id="">
+                       <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <a class="nav-link active" id="pills-x-tab" data-bs-toggle="pill" href="#pills-x" role="tab" aria-controls="pills-x" aria-selected="true">Human</a>
+                            <a class="nav-link" id="pills-hybridx-tab" data-bs-toggle="pill" href="#pills-hybridx" role="tab" aria-controls="pills-hybridx" aria-selected="false">Hybrid</a>
+                            <a class="nav-link" id="pills-transformx-tab" data-bs-toggle="pill" href="#pills-transformx" role="tab" aria-controls="pills-transformx" aria-selected="false">Dragon</a>
+                        </nav>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-x" role="tabpanel" aria-labelledby="pills-x-tab">                        
+                                <h1 class="character-title">X skill</h1>
+                                <p class="character-description"><h5>Infernal Pincer</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-x.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user dashes towards the cursor, breaking the ground beneath them and leaving a trail of fire. If an enemy is in the way of the attack, the user grabs them, then jumps up and throws the enemy in slow motion towards the cursor's point, causing a crater and fire to appear at the point of impact.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-hybridx" role="tabpanel" aria-labelledby="pills-hybridx-tab">                        
+                                <h1 class="character-title">X skill</h1>
+                                <p class="character-description"><h5>Infernal Pincer</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-hybridx.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user dashes towards the cursor, breaking the ground beneath them and leaving a trail of fire. If an enemy is in the way of the attack, the user grabs them, then jumps up and throws the enemy in slow motion towards the cursor's point, causing a crater and fire to appear at the point of impact.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-transformx" role="tabpanel" aria-labelledby="pills-transformx-tab">
+                                <h1 class="character-title">X skill</h1>
+                                <p class="character-description"><h5>Infernal Pincer</h5></p> 
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-west-transform-x.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user releases fiery claws, knocks back the target when hit, has a large hitbox</h5>
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </div>
                                 
                 <div class="col-6" id="west-5">
                     <section class="character-section">
-                        <h1 class="character-title">C skill</h1>
-                        <p class="character-description">Scorching Downfall</p>
-                        <div class="Gif-dragon">
-                            <img src="{% static 'Videos/Dragon-c.gif' %}" type="gif" id="">
+                        <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                            <a class="nav-link active" id="pills-с-tab" data-bs-toggle="pill" href="#pills-с" role="tab" aria-controls="pills-с" aria-selected="true">Human</a>
+                            <a class="nav-link" id="pills-hybridс-tab" data-bs-toggle="pill" href="#pills-hybridс" role="tab" aria-controls="pills-hybridс" aria-selected="false">Hybrid</a>
+                            <a class="nav-link" id="pills-transformс-tab" data-bs-toggle="pill" href="#pills-transformс" role="tab" aria-controls="pills-transformс" aria-selected="false">Dragon</a>
+                        </nav>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-с" role="tabpanel" aria-labelledby="pills-с-tab">                        
+                                <h1 class="character-title">С skill</h1>
+                                <p class="character-description"><h5>Scorching Downfall</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-c.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user rises into the air and launches a powerful barrage in the direction of the cursor, stunning enemies and dealing significant damage. With each hit, the projectiles deal less damage to the enemy.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-hybridс" role="tabpanel" aria-labelledby="pills-hybridс-tab">                        
+                                <h1 class="character-title">С skill</h1>
+                                <p class="character-description"><h5>Scorching Downfall</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-hybridc.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user rises into the air and launches a powerful barrage in the direction of the cursor, stunning enemies and dealing significant damage. With each hit, the projectiles deal less damage to the enemy.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-transformс" role="tabpanel" aria-labelledby="pills-transformс-tab">
+                                <h1 class="character-title">С skill</h1>
+                                <p class="character-description"><h5>Scorching Downfall</h5></p> 
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-west-transform-c.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>The user releases a sphere that attracts the target to itself and deals fire damage around a certain radius, at the end it explodes, pushing the target away, dealing great damage.</h5>
+                                </p>
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -158,68 +278,76 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-6" id="west-2">
+                    <div class="col-6" id="west-2">
+                        <section class="character-section">
+                            <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                                <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Hybrid</a>
+                                <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Dragon</a>
+                            </nav>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                        
+                                    <h1 class="character-title">V skill (Hybrid form)</h1>
+                                    <p class="character-description">Imperial Evolution </p>
+                                    <div class="Gif-dragon">
+                                        <img src="{% static 'Videos/Dragon-hybrid.gif' %}" type="gif" id="">
+                                    </div>
+                                    <p class="character-description">
+                                        <h5>When the orange gauge is full, the user transforms into a Hybrid version, creating a fiery explosion that produces large bodies.</h5>
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">     
+                                    <h1 class="character-title">V skill (Dragon form)</h1>
+                                    <p class="character-description">Imperial Evolution </p>
+                                    <div class="Gif-dragon">
+                                        <img src="{% static 'Videos/Dragon-transform(west).gif' %}" type="gif" id="">
+                                    </div>
+                                    <p class="character-description"><h5>After the orange Fury Meter (first Fury Meter) is full and the red Fury Meter (second Fury Meter) 
+                                    is full when a player uses [V] Imperial Evolution it transforms into dragon.</h5></p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                                    <div class="col-6" id="TransformX">
                     <section class="character-section">
                         <nav class="nav nav-pills" id="pills-tab" role="tablist">
-                            <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-                            <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                            <a class="nav-link active" id="pills-fly-tab" data-bs-toggle="pill" href="#pills-fly" role="tab" aria-controls="pills-fly" aria-selected="true">Fly</a>
+                            <a class="nav-link" id="pills-hitf-tab" data-bs-toggle="pill" href="#pills-hitf" role="tab" aria-controls="pills-hitf" aria-selected="false">Hit</a>
+                            <a class="nav-link" id="pills-transformf-tab" data-bs-toggle="pill" href="#pills-transformf" role="tab" aria-controls="pills-transformf" aria-selected="false">Dragon</a>
                         </nav>
                         <div class="tab-content" id="pills-tabContent">
-                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                        
-                                <h1 class="character-title">Z skill</h1>
-                                <p class="character-description">Heatwave Cannon</p>
+                            <div class="tab-pane fade show active" id="pills-fly" role="tabpanel" aria-labelledby="pills-fly-tab">                        
+                                <h1 class="character-title">F skill (fly)</h1>
+                                <p class="character-description">Draconic Soar</p>
                                 <div class="Gif-dragon">
-                                    <img src="{% static 'Videos/Dragon-hybrid.gif' %}" type="gif" id="">
+                                    <img src="{% static 'Videos/Dragon-fly.gif' %}" type="gif" id="">
                                 </div>
+                                <p class="character-description">
+                                    <h5>When the key is pressed, the user gets wings on his back, which allow him to fly. When diving down, the user bursts into flames, which disappear if the speed is not enough.</h5>
+                                </p>
                             </div>
-                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">     
-                                <h1 class="character-title">V skill (Dragon form)</h1>
-                                <p class="character-description">Imperial Evolution </p>
+                            <div class="tab-pane fade" id="pills-hitf" role="tabpanel" aria-labelledby="pills-hitf-tab">
+                                <h1 class="character-title">F skill (hit)</h1>
+                                <p class="character-description">Draconic Soar</p>
                                 <div class="Gif-dragon">
-                                    <img src="{% static 'Videos/Dragon-transform(west).gif' %}" type="gif" id="">
+                                    <img src="{% static 'Videos/Dragon-f.gif' %}" type="gif" id="">
                                 </div>
-                                <p class="character-description"><h5>After the orange Fury Meter (first Fury Meter) is full and the red Fury Meter (second Fury Meter) 
-                                is full when a player uses [V] Imperial Evolution it transforms into dragon.</h5></p>
+                                <p class="character-description">
+                                    <h5>By quickly pressing the key, the user makes a dash in the direction of the cursor, and if an enemy is encountered on the way, then he stops in front of him for a few moments, makes blows, and then continues on his way in the same direction.</h5>
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-transformf" role="tabpanel" aria-labelledby="pills-transformf-tab">
+                                <h1 class="character-title">F skill (transform)</h1>
+                                <p class="character-description">Draconic Soar</p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Dragon-west-transform-f.gif' %}" type="gif" id="">
+                                </div>
+                                <p class="character-description">
+                                    <h5>By quickly pressing the key, the user makes a dash in the direction of the cursor, and if an enemy is encountered on the way, then he stops in front of him for a few moments, makes blows, and then continues on his way in the same direction.</h5>
+                                </p>
                             </div>
                         </div>
                     </section>
                 </div>
-            </div>
-
-                <div class="col-6" id="">
-                    <section class="character-section">
-                        <h1 class="character-title">V skill (Dragon form)</h1>
-                        <p class="character-description">Imperial Evolution </p>
-                        <div class="Gif-dragon">
-                            <img src="{% static 'Videos/Dragon-transform(west).gif' %}" type="gif" id="">
-                        </div>
-                        <p class="character-description"><h5>After the orange Fury Meter (first Fury Meter) is full and the red Fury Meter (second Fury Meter) 
-                        is full when a player uses [V] Imperial Evolution it transforms into dragon.</h5></p>
-                    </section>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-6" id="TransformZ">
-                    <section class="character-section">
-                        <h1 class="character-title">F skill (hit)</h1>
-                        <p class="character-description">Draconic Soar</p>
-                        <div class="Gif-dragon">
-                            <img src="{% static 'Videos/Dragon-f.gif' %}" type="gif" id="">
-                        </div>
-                    </section>
-                </div>
-        
-                <div class="col-6" id="TransformX">
-                    <section class="character-section">
-                        <h1 class="character-title">F skill (fly)</h1>
-                        <p class="character-description">Draconic Soar</p>
-                        <div class="Gif-dragon">
-                            <img src="{% static 'Videos/Dragon-fly.gif' %}" type="gif" id="">
-                        </div>
-                    </section>
                 </div>
             </div>
         </div>
