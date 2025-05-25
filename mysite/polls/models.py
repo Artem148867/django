@@ -19,9 +19,9 @@ class Message(models.Model):
 class Product(models.Model):
     product_id = models.CharField(max_length=40)
     product_name = models.CharField(max_length=40)
-    product_price = models.IntegerField(default=99)
+    product_price = models.IntegerField(default=1)
     product_owner = models.ForeignKey(Client, on_delete = models.CASCADE)
-    product_discount = models.IntegerField(default=99)
+    product_discount = models.IntegerField(default=0)
     product_image = models.CharField(max_length=100, default='')
     product_url = models.TextField(default='')
 
