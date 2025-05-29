@@ -115,3 +115,29 @@ h3 {
 .navbar{
   height: fit-content;
 }
+
+h5 {
+    color: white;
+}
+
+.carousel-control-prev{
+    margin-left: 17%;
+}
+
+.carousel-control-next {
+    margin-right: 17%;
+}
+
+.nav-pills .nav-link.active {
+    background: linear-gradient(135deg, #3f3e3e, #2c003e);
+    color: #ff69b4;;
+}
+
+.nav-pills .nav-link.active:hover {
+    background-color: rgb(223, 124, 3); /* Темно-оранжевый цвет при наведении */
+}
+
+#dragoneast{
+    width: 100.09%;
+    margin-left: -0.25%;
+}

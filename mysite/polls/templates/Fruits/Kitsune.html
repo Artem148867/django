@@ -4,7 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/Dragon-east.css' %}">   
+    <link rel="stylesheet" href="{% static 'css/Kitsune.css' %}">   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon-west</title>
@@ -41,59 +41,212 @@
     </nav>
     <div class="container" id="container"> 
         <div class="row">
-            <div class="col-6" id="west-1">
-                <section class="character-section">
-                    <h1 class="character-title">Dragon Fruit (East)</h1>
-                    <p class="character-description">Могущественный фрукт с разрушительными способностями. Управляй стихиями и доминируй на поле боя!</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon east gif.gif' %}" type="gif" id="">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">Kitsune fruit</h1>
+                                <p class="character-description"><h5>Kitsune grants the user the ability to conjure and manipulate blue fire into destructive attacks and allows them to transform into a creature in Japanese mythology, the Kitsune, enhancing their attacks significantly, and many abilities such as speed and the ability to walk on water, at the cost of some of their tails.</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Kitsune-fruit.gif' %}" type="gif" id="kitsune">
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                </section>
+                    <div class="carousel-item">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">2 tails form</h1>
+                                <p class="character-description"><h5>The user gets a speed boost +100% [2x] and a dash boost and now runs on all fours. (Air jumping, dashing, and walking will also now have a unique animation)</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Kitsune-2tails.gif' %}" type="gif" id="kitsune3t">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">3 tails form</h1>
+                                <p class="character-description"><h5>The user gets three glowing orbs, when using [F] move or an M1, the enemy will deal tick damage by blue flames.</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Kitsune-3tails.gif' %}" type="gif" id="kitsune3t">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">Transform</h1>
+                                <p class="character-description"><h5>While transformed, the user gains a 20% damage reduction from all sources, 
+                                    improved attacks, faster speed, jump twice higher than average, and increased dash distance. When transformed, 
+                                    the user gains the ability to run on Water, but they are not able to idle on it. When transformed, 
+                                    the user can be mounted by another allied player, riding their saddle. </h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Kitsune-transform.gif' %}" type="gif" id="kitsune">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
              
     <div class="container">
         <div class="row">
             <div class="col-6" id="M1">
-            <section class="character-section">
-                <h1 class="character-title">M1</h1>
-                <p class="character-description">Draconic Blood</p>
-                <div class="Gif-dragon">
-                    <img src="{% static 'Videos/Dragon-m1.gif' %}" type="gif" id="">
-                </div>
-            </section>
+                <section class="character-section">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-m1-tab" data-bs-toggle="pill" href="#pills-m1" role="tab" aria-controls="pills-m1" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformm1-tab" data-bs-toggle="pill" href="#pills-transformm1" role="tab" aria-controls="pills-transformm1" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-m1" role="tabpanel" aria-labelledby="pills-m1-tab">                        
+                            <h1 class="character-title">M1 skill</h1>
+                            <p class="character-description"><h5>Normal Attack</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-m1.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-air-m1.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user slashes the air, creating blue flame slashes. On the fourth slash, the user swipes in a whirlwind style. And with the last slash having two variations, on the ground the user swipes downwards, leaving a faint crack for a few moments, in the air the user kicks the opponent to the ground (Both variations deal the same amount of damage). Once at 3 tails, the slashes will inflict ticking damage and the opponent will be covered in blue flame for between 4-5 seconds and the base damage will increase too. Every slash drains the Tails meter by a bit. Jumping right before the slam will make the user perform a slash instead of a slam.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformm1" role="tabpanel" aria-labelledby="pills-transformm1-tab">
+                            <h1 class="character-title">M1 skill</h1>
+                            <p class="character-description"><h5>Normal Attack</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-m1.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-air-m1.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user slashes the air, creating blue flame slashes. On the fourth slash, the user swipes in a whirlwind style. And with the last slash having two variations, on the ground the user swipes downwards, leaving a faint crack for a few moments, in the air the user kicks the opponent to the ground (Both variations deal the same amount of damage). Once at 3 tails, the slashes will inflict ticking damage and the opponent will be covered in blue flame for between 4-5 seconds and the base damage will increase too. Every slash drains the Tails meter by a bit. Jumping right before the slam will make the user perform a slash instead of a slam.</h5>
+                            </p>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class="col-6" id="west-3">
                 <section class="character-section">
-                    <h1 class="character-title">Z skill</h1>
-                    <p class="character-description">Heatwave Cannon</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-z.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-test-tab" data-bs-toggle="pill" href="#pills-test" role="tab" aria-controls="pills-test" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformz-tab" data-bs-toggle="pill" href="#pills-transformz" role="tab" aria-controls="pills-transformz" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-test" role="tabpanel" aria-labelledby="pills-test-tab">                        
+                            <h1 class="character-title">Z skill</h1>
+                            <p class="character-description"><h5>Accursed Enchantment</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-hit-z.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>If hit: The user summons blue fire flames that circle the opponent for some time before hitting the opponent multiple times, dealing damage.</h5>
+                            </p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-nothit-z.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>If not hit: The user creates a small AoE that deals low damage to nearby targets.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformz" role="tabpanel" aria-labelledby="pills-transformz-tab">
+                            <h1 class="character-title">Z skill</h1>
+                            <p class="character-description">
+                                <h5>Accursed Enchantment</h5>
+                            </p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-hit-z.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>If hit: Targets up to 1-3 opponents, launching them backward and shooting a ball of blue flames per target (untransformed C is used), causing an explosion of blue flames as well as ticking damage.    </h5>
+                            </p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-nothit-z.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>If not hit: The user will spin and launch a flurry of blue fireballs around them, causing a large AoE explosion.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
 
-
     <div class="container">
         <div class="row">
             <div class="col-6" id="west-4">
                 <section class="character-section">
-                <h1 class="character-title">X skill</h1>
-                <p class="character-description">Infernal Pincer</p>
-                <div class="Gif-dragon">
-                    <img src="{% static 'Videos/Dragon-x.gif' %}" type="gif" id="">
-                </div>
+                <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-x-tab" data-bs-toggle="pill" href="#pills-x" role="tab" aria-controls="pills-x" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformx-tab" data-bs-toggle="pill" href="#pills-transformx" role="tab" aria-controls="pills-transformx" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-x" role="tabpanel" aria-labelledby="pills-x-tab">                        
+                            <h1 class="character-title">X skill</h1>
+                            <p class="character-description"><h5>Tails of Burning Agony</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-x.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>This move does damage in a zig-zag shape, first hitting one corner, then hitting another, and finally hitting the target. This move can hit up to three targets and stun the enemy for ~0.65s.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformx" role="tabpanel" aria-labelledby="pills-transformx-tab">
+                            <h1 class="character-title">X skill</h1>
+                            <p class="character-description"><h5>Tails of Burning Agony</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-x.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user dashes forward in a zig-zag shape. If hits, the user will grab the enemy, carry them into the air, and then slam them to the ground hard. This move will break Instinct and blue flames will then rise from the ground along with several large tails. This move instantly slams an opponent if used in air. The face of a Kitsune will be printed on the ground when hit.</h5>
+                            </p>
+                        </div>
+                    </div>
                 </section>
             </div>
                                
             <div class="col-6" id="west-5">
                 <section class="character-section">
-                    <h1 class="character-title">C skill</h1>
-                    <p class="character-description">Scorching Downfall</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-c.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-с-tab" data-bs-toggle="pill" href="#pills-с" role="tab" aria-controls="pills-с" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformс-tab" data-bs-toggle="pill" href="#pills-transformс" role="tab" aria-controls="pills-transformс" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-с" role="tabpanel" aria-labelledby="pills-с-tab">                        
+                            <h1 class="character-title">С skill</h1>
+                            <p class="character-description"><h5>Fox Fire Disruption</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-c.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user summons a ball of blue flames and strikes it at the enemy when the key is released. The ball of flames will erupt into a huge explosion, and flames will be present if landed near the ground. These break Instinct. The move deals slightly more damage if it is a direct hit.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformс" role="tabpanel" aria-labelledby="pills-transformс-tab">
+                            <h1 class="character-title">С skill</h1>
+                            <p class="character-description"><h5>Fox Fire Disruption</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-c.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user launches a blue fireball and causes widespread damage. After impact, there will be blue flames that cause extremely large damage over time.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
              </div>
@@ -104,50 +257,66 @@
         <div class="row">
             <div class="col-6" id="west-2">
                 <section class="character-section">
-                    <h1 class="character-title">V skill</h1>
-                    <p class="character-description">Hybrid form</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-hybrid.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                        
+                            <h1 class="character-title">V skill</h1>
+                            <p class="character-description">Transformation</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-v.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                            <h5>	The user transforms into a huge Kitsune. The user gains the ability to avoid all basic damage (in one second) while in the transforming state.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">     
+                            <h1 class="character-title">V skill</h1>
+                            <p class="character-description">Transformation</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-v.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description"><h5>The user transforms back into their human form instantly and in turn restores their ability to use Fighting Styles, Swords, and Guns.</h5></p>
+                        </div>
                     </div>
-            </section>
+                </section>
             </div>
 
             <div class="col-6" id="">
                 <section class="character-section">
-                    <h1 class="character-title">V skill</h1>
-                    <p class="character-description">Transform</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-transform.gif' %}" type="gif" id="">
+                   <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-fly-tab" data-bs-toggle="pill" href="#pills-fly" role="tab" aria-controls="pills-fly" aria-selected="true">Fly</a>
+                        <a class="nav-link" id="pills-transformf-tab" data-bs-toggle="pill" href="#pills-transformf" role="tab" aria-controls="pills-transformf" aria-selected="false">Dragon</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-fly" role="tabpanel" aria-labelledby="pills-fly-tab">                        
+                            <h1 class="character-title">F skill</h1>
+                            <p class="character-description">Wild Assault</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-f.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user dashes forward and, if they hit a target, slashes the target with its claws multiple times, similar to a mix of the True Triple Katana and Rengoku's [Z] move and the Kitsune M1's.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformf" role="tabpanel" aria-labelledby="pills-transformf-tab">
+                            <h1 class="character-title">F skill</h1>
+                            <p class="character-description">Wild Assault</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Kitsune-transform-f.gif' %}" type="gif" id="kitsune">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user dashes towards the enemy and swipes with their tail, similar to the True Triple Katana [Z] move, Rengoku [Z] move and Kitsune M1's.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="TransformZ">
-                <section class="character-section">
-                    <h1 class="character-title">F skill (hit)</h1>
-                    <p class="character-description">Draconic Soar</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-f.gif' %}" type="gif" id="">
-                    </div>
-                </section>
-            </div>
     
-            <div class="col-6" id="TransformX">
-                <section class="character-section">
-                    <h1 class="character-title">F skill (fly)</h1>
-                    <p class="character-description">Draconic Soar</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-fly.gif' %}" type="gif" id="">
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 crossorigin="anonymous">
