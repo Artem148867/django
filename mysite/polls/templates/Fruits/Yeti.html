@@ -4,7 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/Dragon-east.css' %}">   
+    <link rel="stylesheet" href="{% static 'css/Yeti.css' %}">   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon-west</title>
@@ -41,14 +41,39 @@
     </nav>
     <div class="container" id="container">  
         <div class="row">
-            <div class="col-6" id="west-1">
-                <section class="character-section">
-                    <h1 class="character-title">Dragon Fruit (East)</h1>
-                    <p class="character-description">Могущественный фрукт с разрушительными способностями. Управляй стихиями и доминируй на поле боя!</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon east gif.gif' %}" type="gif" id="">
+                        <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">Yeti fruit</h1>
+                                <p class="character-description"><h5>Kitsune grants the user the ability to conjure and manipulate blue fire into destructive attacks and allows them to transform into a creature in Japanese mythology, the Kitsune, enhancing their attacks significantly, and many abilities such as speed and the ability to walk on water, at the cost of some of their tails.</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Yeti fruit.gif' %}" type="gif" id="yeti">
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                </section>
+                    <div class="carousel-item">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">Transform</h1>
+                                <p class="character-description"><h5>The user gets a speed boost +100% [2x] and a dash boost and now runs on all fours. (Air jumping, dashing, and walking will also now have a unique animation)</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Yeti-transform.gif' %}" type="gif" id="yeti">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
              
@@ -57,18 +82,48 @@
             <div class="col-6" id="M1">
             <section class="character-section">
                 <h1 class="character-title">M1</h1>
-                <p class="character-description">Draconic Blood</p>
+                <p class="character-description">Normal Attack</p>
                 <div class="Gif-dragon">
-                    <img src="{% static 'Videos/Dragon-m1.gif' %}" type="gif" id="">
+                    <img src="{% static 'Videos/Yeti-transform-m1.gif' %}" type="gif" id="yeti">
                 </div>
+                <p class="character-description">
+                    <h5>The user strikes with a pair of ice claws twice, followed by a stomp on the third one, and then unleashes a roar that can knock the enemy backwards on the final one.</h5>
+                </p>
             </section>
             </div>
             <div class="col-6" id="west-3">
                 <section class="character-section">
-                    <h1 class="character-title">Z skill</h1>
-                    <p class="character-description">Heatwave Cannon</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-z.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-m1-tab" data-bs-toggle="pill" href="#pills-m1" role="tab" aria-controls="pills-m1" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformm1-tab" data-bs-toggle="pill" href="#pills-transformm1" role="tab" aria-controls="pills-transformm1" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-m1" role="tabpanel" aria-labelledby="pills-m1-tab">                        
+                            <h1 class="character-title">Z skill</h1>
+                            <p class="character-description"><h5>Arctic Clap</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-zgh.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-zah.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user's hand will attract icy energy and cause the screen to shake a little. When released, the user compiles a large amount of snow on their hands and slams them together, causing a straight-line explosion of ice, knocking away enemies a good distance. This ability cannot be aimed vertically, and has quite a small range. When used in the air, this attack will appear as a powerful gust of cold wind instead.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformm1" role="tabpanel" aria-labelledby="pills-transformm1-tab">
+                            <h1 class="character-title">Z skill</h1>
+                            <p class="character-description"><h5>Arctic Clap</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-zg.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/yeti-transform-za.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user attracts even more energy to their hands, causing the screen to tremble, before launching a bigger straight-line ice explosion that knocks targets backwards, albeit with ice spikes all over the floor pointing towards the cursor, similar to Awakened Ice's X move. When used on water, it will create ice blocks underneath. In the air, it will create an even bigger burst of wind from a cold storm.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -80,20 +135,76 @@
         <div class="row">
             <div class="col-6" id="west-4">
                 <section class="character-section">
-                <h1 class="character-title">X skill</h1>
-                <p class="character-description">Infernal Pincer</p>
-                <div class="Gif-dragon">
-                    <img src="{% static 'Videos/Dragon-x.gif' %}" type="gif" id="">
-                </div>
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-x-tab" data-bs-toggle="pill" href="#pills-x" role="tab" aria-controls="pills-x" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformx-tab" data-bs-toggle="pill" href="#pills-transformx" role="tab" aria-controls="pills-transformx" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-x" role="tabpanel" aria-labelledby="pills-x-tab">                        
+                            <h1 class="character-title">X skill</h1>
+                            <p class="character-description"><h5>Frostbite Boulder</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-xgh.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-xsh.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user formulates a huge snowball from their hand. When released, the user hurls the snowball towards the cursor, exploding after crashing into any surface, damaging enemies caught in the impact with a snowy blast while leaving traces of snow behind. Unlike other ball-shaped moves such as Rumble's and Flame's V, the speed of which the snowball is thrown is extremely fast, akin to a bullet. When the snowball lands in water, it will create an ice platform at where it landed.</h5>
+                            </p>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformx" role="tabpanel" aria-labelledby="pills-transformx-tab">
+                            <h1 class="character-title">X skill</h1>
+                            <p class="character-description"><h5>Frostbite Boulder</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-xg.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-xs.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user hurls a massive snowball that, upon landing, splits into smaller snowballs, damaging enemies within the impact. When used on water, it will create a large ice block at where it landed, making a temporary platform for teammates to stand on while fighting Sea Events. The large ice block created by the snowball can stop enemy boats in its tracks, and the same goes for the transformed's frostwalk passive.</h5>
+                            </p>
+                        </div>
+                    </div> 
                 </section>
             </div>
                                
             <div class="col-6" id="west-5">
                 <section class="character-section">
-                    <h1 class="character-title">C skill</h1>
-                    <p class="character-description">Scorching Downfall</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-c.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-c-tab" data-bs-toggle="pill" href="#pills-c" role="tab" aria-controls="pills-c" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformc-tab" data-bs-toggle="pill" href="#pills-transformc" role="tab" aria-controls="pills-transformc" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">                        
+                            <h1 class="character-title">С skill</h1>
+                            <p class="character-description"><h5>Glacial Execution</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-cgh.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-csh.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user launches themselves towards the cursor, and upon contact, they exhale a breathe of freezing air that encases the opponent, before dashing to behind them and blasting them forwards with a devastating amount of force. This move is single target, so it is not recommended to use this for grinding. When aimed towards water, a small ice platform will form in the water where the user is supposed to land.</h5>
+                            </p>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformc" role="tabpanel" aria-labelledby="pills-transformc-tab">
+                            <h1 class="character-title">C skill</h1>
+                            <p class="character-description"><h5>Glacial Execution</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-cg.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-cs.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user hurls a massive snowball that, upon landing, splits into smaller snowballs, damaging enemies within the impact. When used on water, it will create a large ice block at where it landed, making a temporary platform for teammates to stand on while fighting Sea Events. The large ice block created by the snowball can stop enemy boats in its tracks, and the same goes for the transformed's frostwalk passive.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
              </div>
@@ -104,44 +215,66 @@
         <div class="row">
             <div class="col-6" id="west-2">
                 <section class="character-section">
-                    <h1 class="character-title">V skill</h1>
-                    <p class="character-description">Hybrid form</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-hybrid.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                        
+                            <h1 class="character-title">V skill</h1>
+                            <p class="character-description">Transformation</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-v.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                            <h5>The user roars, causing ice spikes to pierce out of the ground, dealing damage and knockback to any nearby enemies, before transforming into an upright, huge Yeti with red, glowing eyes. The user gains the ability to walk on water, but loses the ability to use Fighting Styles, Swords and Guns. The size of the Yeti transformation is about as tall as a transformed T-Rex.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">     
+                            <h1 class="character-title">V skill</h1>
+                            <p class="character-description">Transformation</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-v.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description"><h5>The user transforms back into their normal form, allowing the user to use fighting styles, swords and guns. Keep in mind that the user also loses the ability to walk on water by doing this.</h5></p>
+                        </div>
                     </div>
-            </section>
+                </section>
             </div>
 
             <div class="col-6" id="">
                 <section class="character-section">
-                    <h1 class="character-title">V skill</h1>
-                    <p class="character-description">Transform</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-transform.gif' %}" type="gif" id="">
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="TransformZ">
-                <section class="character-section">
-                    <h1 class="character-title">F skill (hit)</h1>
-                    <p class="character-description">Draconic Soar</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-f.gif' %}" type="gif" id="">
-                    </div>
-                </section>
-            </div>
-    
-            <div class="col-6" id="TransformX">
-                <section class="character-section">
-                    <h1 class="character-title">F skill (fly)</h1>
-                    <p class="character-description">Draconic Soar</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-fly.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-fly-tab" data-bs-toggle="pill" href="#pills-fly" role="tab" aria-controls="pills-fly" aria-selected="true">Fly</a>
+                        <a class="nav-link" id="pills-transformf-tab" data-bs-toggle="pill" href="#pills-transformf" role="tab" aria-controls="pills-transformf" aria-selected="false">Dragon</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-fly" role="tabpanel" aria-labelledby="pills-fly-tab">                        
+                            <h1 class="character-title">F skill</h1>
+                            <p class="character-description">Tundra Rush</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-fgh.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-fah.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user charges and grabs the enemy, slamming them into the ground three times, creating ice explosions and ice ground spikes on the floor. In the air, the user makes the enemy spin and then throws the enemy away. Just like the [C] move, Glacial Execution, this move is single target.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformf" role="tabpanel" aria-labelledby="pills-transformf-tab">
+                            <h1 class="character-title">F skill</h1>
+                            <p class="character-description">Tundra Rush</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-fg.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Yeti-transform-fa.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user charges and grabs the enemy, slamming them onto the ground three times and then slamming them backwards. If used in the air, user creates an ice boulder around the target, slams into the ground and then throws them.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
