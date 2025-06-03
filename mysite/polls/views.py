@@ -1,7 +1,7 @@
 from django.http import HttpResponse, HttpResponseRedirect
 
 from .models import Client, Product, Role
-from django.shortcuts import get_object_or_404,render
+from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views.decorators.csrf import csrf_exempt
 
@@ -26,7 +26,10 @@ def Leopard(request):
    return render(request, 'Fruits/Leopard.html')
 
 def Gravity(request):
-   return render(request, 'Fruits/Gravity.html')      
+   return render(request, 'Fruits/Gravity.html')
+
+def Payment(request):
+   return render(request, 'Payment.html')      
 
 def feedback(request):
     email = request.POST['email']

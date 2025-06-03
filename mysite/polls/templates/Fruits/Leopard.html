@@ -4,7 +4,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/Dragon-east.css' %}">   
+    <link rel="stylesheet" href="{% static 'css/Leopard.css' %}">   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dragon-west</title>
@@ -13,62 +13,88 @@
     <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'polls:index' %}">Главная</a>
-            <div class="collapse navbar-collapse show" id="navbarDark">
-                <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Билды</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
-                </form>
-            </div>
         </div>
     </nav>
     <div class="container" id="container">  
         <div class="row">
-            <div class="col-6" id="west-1">
-                <section class="character-section">
-                    <h1 class="character-title">Dragon Fruit (East)</h1>
-                    <p class="character-description">Могущественный фрукт с разрушительными способностями. Управляй стихиями и доминируй на поле боя!</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon east gif.gif' %}" type="gif" id="">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">Leopard Fruit</h1>
+                                <p class="character-description"><h5>Leopard allows the user to acquire powerful and violent attacks, as well as to transform into an anthropomorphic leopard, granting them speed, agility and offense. This fruit is easily abusable due to it having no Fury Meter, low cooldown moves that can be spammed, allowing the user to rapidly cast out attacks to easily kill another player. </h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Leopard-fruit.gif' %}" type="gif" id="yeti">
+                                </div>
+                            </section>
+                        </div>
                     </div>
-                </section>
+                    <div class="carousel-item">
+                        <div class="col-6" id="west-1">
+                            <section class="character-section">
+                                <h1 class="character-title">Transform</h1>
+                                <p class="character-description"><h5>During Leopard's Transformation ([V]), the user will gain a moderate speed boost/buff. Using Rabbit V3 and the Pilot Helmet add up even more speed buffs. Combining all of them can make the user surpass the speed of Awakened Light's [F] (Shining Flight), which is the second fastest flight move in the game.
+                                When transformed, the user is "immune" to all environment lava puddles, such as those found in Raids or on the island Hot and Cold (This is because the hitbox when transforming is above the lava, preventing the user from taking damage). The user, however, can be harmed by the lava puddles by being dragged down by an ability such as Flame's V move.</h5></p>
+                                <div class="Gif-dragon">
+                                    <img src="{% static 'Videos/Leopard-transform.gif' %}" type="gif" id="yeti">
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
              
     <div class="container">
         <div class="row">
             <div class="col-6" id="M1">
-            <section class="character-section">
-                <h1 class="character-title">M1</h1>
-                <p class="character-description">Draconic Blood</p>
-                <div class="Gif-dragon">
-                    <img src="{% static 'Videos/Dragon-m1.gif' %}" type="gif" id="">
-                </div>
+                <section class="character-section">
+                    <h1 class="character-title">M1</h1>
+                    <p class="character-description">Normal Attack</p>
+                    <div class="Gif-dragon">
+                        <img src="{% static 'Videos/Leopard-transform-m1.gif' %}" type="gif" id="yeti">
+                    </div>
+                    <p class="character-description">
+                        <h5>	The user swings and hits with the claws three times before letting out a roar which breaks Instinct and deals AoE damage.</h5>
+                    </p>
             </section>
             </div>
             <div class="col-6" id="west-3">
                 <section class="character-section">
-                    <h1 class="character-title">Z skill</h1>
-                    <p class="character-description">Heatwave Cannon</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-z.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-m1-tab" data-bs-toggle="pill" href="#pills-m1" role="tab" aria-controls="pills-m1" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformm1-tab" data-bs-toggle="pill" href="#pills-transformm1" role="tab" aria-controls="pills-transformm1" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-m1" role="tabpanel" aria-labelledby="pills-m1-tab">                        
+                            <h1 class="character-title">Z skill</h1>
+                            <p class="character-description"><h5>Finger Revolver</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-z.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user's hand will attract icy energy and cause the screen to shake a little. When released, the user compiles a large amount of snow on their hands and slams them together, causing a straight-line explosion of ice, knocking away enemies a good distance. This ability cannot be aimed vertically, and has quite a small range. When used in the air, this attack will appear as a powerful gust of cold wind instead.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformm1" role="tabpanel" aria-labelledby="pills-transformm1-tab">
+                            <h1 class="character-title">Z skill</h1>
+                            <p class="character-description"><h5>Finger Revolver</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-transform-z.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user shoots out a blazing projectile out of the user's hand (supposedly their finger) where their cursor is aiming. After a while this projectile explodes. If the key is held down, it will send a barrage of ghostly index-pointing hands where their cursor is aiming, then after a short moment the blazing projectile will be fired. If the user takes damage while holding this move, they will automatically shoot the final projectile, similar to other held moves.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -80,20 +106,64 @@
         <div class="row">
             <div class="col-6" id="west-4">
                 <section class="character-section">
-                <h1 class="character-title">X skill</h1>
-                <p class="character-description">Infernal Pincer</p>
-                <div class="Gif-dragon">
-                    <img src="{% static 'Videos/Dragon-x.gif' %}" type="gif" id="">
-                </div>
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-x-tab" data-bs-toggle="pill" href="#pills-x" role="tab" aria-controls="pills-x" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformx-tab" data-bs-toggle="pill" href="#pills-transformx" role="tab" aria-controls="pills-transformx" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-x" role="tabpanel" aria-labelledby="pills-x-tab">                        
+                            <h1 class="character-title">X skill</h1>
+                            <p class="character-description"><h5>Spiraling Kick</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-x.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user creates and sends a large, powerful air-blade in the shape of a swirl with their legs, which is impelled at the cursor like a razor blade and slashes the target several times upon hitting while dragging them along for a few moments, and then shoots them upward in an updraft. The updraft remains there after the move is finished and walking in the path of it with Instinct disabled or holding a move will cause the user to be blasted up. This move is great for combos.</h5>
+                            </p>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformx" role="tabpanel" aria-labelledby="pills-transformx-tab">
+                            <h1 class="character-title">X skill</h1>
+                            <p class="character-description"><h5>Spiraling Kick</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-transform-x.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user produces a slice of wind with their leg. If this ability hits, it will send out a thin, saw-like blade hitting their opponent multiple times, then shoots them upward in an updraft. The updraft remains there after the move is finished, and walking in the path of it with Instinct disabled or holding a move will result in the enemy being caught in the updraft.</h5>
+                            </p>
+                        </div>
+                    </div> 
                 </section>
             </div>
                                
             <div class="col-6" id="west-5">
                 <section class="character-section">
-                    <h1 class="character-title">C skill</h1>
-                    <p class="character-description">Scorching Downfall</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-c.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-c-tab" data-bs-toggle="pill" href="#pills-c" role="tab" aria-controls="pills-c" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-transformc-tab" data-bs-toggle="pill" href="#pills-transformc" role="tab" aria-controls="pills-transformc" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-c" role="tabpanel" aria-labelledby="pills-c-tab">                        
+                            <h1 class="character-title">С skill</h1>
+                            <p class="character-description"><h5>Afterimage Assault</h5></p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-c.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user teleports a couple times in their cursor's direction then lets out a roar that deals damage and knockback. If the user is on the ground then they will smash the ground instead, breaking Instinct in the process.</h5>
+                            </p>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformc" role="tabpanel" aria-labelledby="pills-transformc-tab">
+                            <h1 class="character-title">C skill</h1>
+                            <p class="character-description"><h5>Afterimage Assault</h5></p> 
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-transform-c.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user teleports towards the location of the user's cursor, then lets out a furious roar. If this move is used on the ground, the user also smashes the ground with a great slam at the end of it. This move also adds a fire effect (cosmetic) which increases speed by 40% for 3-4 seconds.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
              </div>
@@ -104,44 +174,60 @@
         <div class="row">
             <div class="col-6" id="west-2">
                 <section class="character-section">
-                    <h1 class="character-title">V skill</h1>
-                    <p class="character-description">Hybrid form</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-hybrid.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Human</a>
+                        <a class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Transform</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">                        
+                            <h1 class="character-title">V skill</h1>
+                            <p class="character-description">Transformation</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-v.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                            <h5>The user transforms into a Leopard-Human hybrid, unleashing a roar which does damage and breaks Instinct.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">     
+                            <h1 class="character-title">V skill</h1>
+                            <p class="character-description">Transformation</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-transform-v.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description"><h5>The user transforms back into their human form instantly, sending out a shower of particles. This reverts the user into their normal state, removing their ability to use Leopard's transformed moves, but in turn restores their ability to use Fighting Styles, Swords and Guns.</h5></p>
+                        </div>
                     </div>
             </section>
             </div>
 
             <div class="col-6" id="">
                 <section class="character-section">
-                    <h1 class="character-title">V skill</h1>
-                    <p class="character-description">Transform</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-transform.gif' %}" type="gif" id="">
-                    </div>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6" id="TransformZ">
-                <section class="character-section">
-                    <h1 class="character-title">F skill (hit)</h1>
-                    <p class="character-description">Draconic Soar</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-f.gif' %}" type="gif" id="">
-                    </div>
-                </section>
-            </div>
-    
-            <div class="col-6" id="TransformX">
-                <section class="character-section">
-                    <h1 class="character-title">F skill (fly)</h1>
-                    <p class="character-description">Draconic Soar</p>
-                    <div class="Gif-dragon">
-                        <img src="{% static 'Videos/Dragon-fly.gif' %}" type="gif" id="">
+                    <nav class="nav nav-pills" id="pills-tab" role="tablist">
+                        <a class="nav-link active" id="pills-fly-tab" data-bs-toggle="pill" href="#pills-fly" role="tab" aria-controls="pills-fly" aria-selected="true">Fly</a>
+                        <a class="nav-link" id="pills-transformf-tab" data-bs-toggle="pill" href="#pills-transformf" role="tab" aria-controls="pills-transformf" aria-selected="false">Dragon</a>
+                    </nav>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-fly" role="tabpanel" aria-labelledby="pills-fly-tab">                        
+                            <h1 class="character-title">F skill</h1>
+                            <p class="character-description">Body Flicker</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-f.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user moves forward a short distance very fast (like a mini Flash Step) and if there is a target in front of the user, they knock them back with a swift kick and deal a good amount of damage. This move breaks Instinct.</h5>
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-transformf" role="tabpanel" aria-labelledby="pills-transformf-tab">
+                            <h1 class="character-title">F skill</h1>
+                            <p class="character-description">Body Flicker</p>
+                            <div class="Gif-dragon">
+                                <img src="{% static 'Videos/Leopard-transform-f.gif' %}" type="gif" id="yeti">
+                            </div>
+                            <p class="character-description">
+                                <h5>The user teleports forward a short distance in the blink of an eye (Sort of like a mini flash-step.) Anyone hit by this move will be hit with a swift kick which deals good damage and high knockback. This move is faster than it's untransformed counterpart. This move breaks Instinct.</h5>
+                            </p>
+                        </div>
                     </div>
                 </section>
             </div>

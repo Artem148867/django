@@ -216,3 +216,7 @@ body {
   text-align: center;
 }
 
+.card__add {
+  text-decoration: none;
+}
+
